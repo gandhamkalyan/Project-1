@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?dark,abstract') no-repeat center center fixed;
+            background-size: cover;
+            color: #f0f0f0; /* Light text color */
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: rgba(33, 33, 33, 0.8); /* Dark semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+        }
+
+        h1 {
+            text-align: center;
+            color: #f0f0f0;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #ddd; /* Lighter text for labels */
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #555;
+            border-radius: 4px;
+            font-size: 1rem;
+            background: #222; /* Dark background for inputs */
+            color: #f0f0f0; /* Light text color for inputs */
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            border-color: #1e90ff; /* Highlight border color on focus */
+            outline: none;
+        }
+
+        .form-group textarea {
+            resize: vertical; /* Allow vertical resizing */
+            min-height: 150px; /* Minimum height for textarea */
+        }
+
+        .form-group button {
+            background: #1e90ff; /* Primary button color */
+            color: #fff;
+            border: none;
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background: #187bcd; /* Darker button color on hover */
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 1rem;
+            color: #f0f0f0;
+            font-size: 2rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info p span {
+            font-weight: bold;
+            color: #1e90ff; /* Highlighted text color */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .form-group input, 
+            .form-group textarea {
+                font-size: 0.9rem;
+            }
+
+            .form-group button {
+                font-size: 1rem;
+            }
+
+            .contact-info h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="/contact" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p><span>Phone:</span> +91 9390169768</p>
+            <p><span>Email:</span> kalyan@google.co</p>
+            <p><span>Address:</span> 123 Main Street, New Jersey, USA</p>
+        </div>
+    </div>
+</body>
+</html>
